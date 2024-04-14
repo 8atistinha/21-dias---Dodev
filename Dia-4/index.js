@@ -1,21 +1,22 @@
-// Variaveis
+// Coletando Variaveis 
 
-let fome = (prompt("O senhor gostaria de aloçar agora?"))
-let dinheiro = (prompt("Mas o senhor tem dinheiro mesmo???"))
-let restAberto = (prompt("Pode vir quando estivermos com atendimento presencial?"))
+let fome = prompt("esta com fome? (S/N)")
 
-if (fome == "nao" || dinheiro == "nao") {
-    console.log("Pode ir comer em casa, vagabundo!")
-} else  {
-    
-}
-if (fome == "sim" && dinheiro == "sim" && restAberto == "sim") {
-    console.log("Hoje vai almoçar fora!")
+
+if (fome == "n") {
+    console.log("Tudo bem, fica para outro dia")
 } else {
-    
+let dinheiro = prompt("tens dinheiro? (S/N)")
+    if (dinheiro == "n")
+    console.log("Tudo bem, fica para outro dia")
+    else {
+    let rest = prompt("Pode vir até aqui? (S/N)")
+        if (rest == "s")
+        console.log("estaremos esperando por voce!")
+        else {
+        console.log("Gostaria de uma quentinha?")
+        }
+    }    
 }
-if (fome == "sim" && dinheiro == "sim" && restAberto == "nao") {
-    console.log("Vai ter que pedir quentinha mesmo")
-} else {
-    
-}
+
+
