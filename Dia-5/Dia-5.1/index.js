@@ -1,25 +1,23 @@
-// Requisicao de informaçoes
-let num1 = Number(prompt("escolha um numero"))
-let num2 = Number(prompt("Escolha outro numero"))
-let operation = prompt("Qual operação matematica gostaria de aplicar?")
+// Variaveis
+let n1 = Number(prompt("Escolha um numero") )
+let n2 = Number(prompt("Escolha mais um numero") )
+let op = Number(prompt("escolha uma operação matemática:" + "\n1 = + \n2 = - \n3 = * \n4 = /"))
 
-switch(operation){
-    case "soma":
-        console.log("A soma dos numeros é: " + num1 + " + " + num2 + " = " + (num1 + num2))
+switch (op) {
+    case 1:
+        console.log(n1 + " + " + n2 + " = " + (n1+n2)) 
         break;
-
-    case "subtracao":
-        console.log("A subtracao dos numeros é: " + num1 + " - " + num2 + " = " + (num1 - num2))
+    case 2:
+        console.log(n1 + " - " + n2 + " = " + (n1-n2))
         break;
-
-    case "multiplicacao":
-        console.log("A multiplicacao dos numeros é: " + num1 + " * " + num2 + " = " + (num1 * num2))
+    case 3:
+        console.log(n1 + " * " + n2 + " = " + (n1*n2))
         break;
-
-    case "divisao":
-        console.log("A divisao dos numeros é: " + num1 + " / " + num2 + " = " + (num1 / num2))
-
+    case 4:
+        console.log(n1 + " / " + n2 + " = " + (n1/n2))
+        break;
     default:
-        console.log("opcao inválida")
+        console.log("Escolha uma operação válida")
         break;
 }
+
